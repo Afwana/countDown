@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Birthday Countdown </title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="cscontainer">
+        <img src="./images/date-of-birth.png" class="logo">
+
+        <div class="content">
+            <div class="text">
+                <h1> It's Your <span>Birthday</span> </h1>
+    
+                <div class="countdown">
+                    <div>
+                        <h3 id="days"> 00 </h3>
+                        <span>Days</span>
+                    </div>
+        
+                    <div>
+                        <h3 id="hours"> 00 </h3>
+                        <span>hours</span>
+                    </div>
+        
+                    <div>
+                        <h3 id="minutes"> 00 </h3>
+                        <span>Minutes</span>
+                    </div>
+
+                    <div>
+                        <h3 id="seconds"> 00 </h3>
+                        <span>Seconds</span>
+                    </div>
+                </div>
+    
+                <button type="button" onclick="setdate()" id="dispbtn"> Set Your Date </button>
+            </div>
+            <div class="formdisp">
+                <div id="formDisplay" style="color: #000000;">
+                    <h5 class="modal-title" style="color: #ffffff; margin-bottom: 5px;">Set Your Date : </h5>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="uname" placeholder="Name" required>
+                        <label for="uname" class="form-label">Name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="date" class="form-control" id="ucdate" placeholder=" Count-Down Date " required>
+                        <label for="ucdate" class="form-label"> Count-Down Date </label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="date" class="form-control" id="udate" placeholder="Date of Birth" required>
+                        <label for="udate" class="form-label">Date of Birth</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="usex" placeholder="male / female " required>
+                        <label for="usex" class="form-label">male / female </label>
+                    </div>
+                    <button type="button" class="btn" id="setbtn"> Start Count-Down </button>
+                </div>
+            </div>
+            <div class="dispflex">
+                <div id="urname"  data-aos="zoom-out-right">
+    
+                </div>
+                <div class="afterDispaly" id="afterCountDown">
+                    <!-- <button type="button" class="btn" id="showbtn"> SHOW </button> -->
+                </div>
+                <div class="anmvideo"  data-aos="fade-left">
+    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./jscdn.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</html>
+
+
+
+
+
+ <!-- name,current date, date of birth,sex
+ when the user click on set date function a card will popup an set birth date,male/female through that card and click button 'start countdown' in that card then the count down will start
+
+ user enter their date of birth from that date and month will get and pass to countDownDate and year will get from current year
+ age will calculate by using user entering birthdate
+
+ when end the count down an animation popup 
+   if the user is male a boy dancing animation and 'happy birthday' wish and then show the age.
+   if the user is female a girl dancing animation and 'happy birthday' wish and then show the age -->

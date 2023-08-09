@@ -1,0 +1,156 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: monospace;
+    box-sizing: border-box;
+}
+.cscontainer{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/skybg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 8%;
+    position: relative;
+}
+.logo{
+    width: 40px;
+    padding: 20px 0;
+    cursor: pointer;
+}
+.content{
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    color: #ffffff;
+}
+.content h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+.content h1 span{
+    color: #000000;
+}
+.content button{
+    background: transparent;
+    border: 3px solid #000000;
+    border-radius: 5px;
+    padding: 12px 25px;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.countdown{
+    display: flex;
+}
+.countdown div{
+    flex-basis: 100px;
+}
+.countdown div h3{
+    font-size: 60px;
+    margin-bottom: -14px;
+}
+.countdown div span{
+    font-size: 12px;
+    margin-left: 13px;
+    margin-top: 15px;
+}
+.content{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+#formDisplay{
+    margin: 10%;
+}
+.formdisp input{
+    width: 500px;
+}
+#setbtn{
+    background: transparent;
+    border: 3px solid #000000;
+    border-radius: 5px;
+    padding: 12px 25px;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.dispflex{
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+.urname{
+    margin-left: 65%;
+    width: 500px;
+    /* background: #000000; */
+    font-size: 25px;
+    font-weight: 700;
+    color: #000000;
+}
+.afterDispaly{
+    margin-left: 65%;
+    width: 500px;
+    /* background: #000000; */
+    font-size: 35px;
+    font-weight: 700;
+    color: #000000;
+}
+.afterDispaly button{
+    margin: 150px 50px 50px 50px;
+}
+#showbtn{
+    background: transparent;
+    border: 3px solid #000000;
+    border-radius: 5px;
+    padding: 12px 25px;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.anmvideo{
+    margin-left: 65%;
+    width: 100px;
+    /* background: #000000; */
+    font-size: 25px;
+    font-weight: 700;
+    color: #000000;
+}
+
+
+/* making responsive */
+@media only screen and (max-width: 600px){
+    .cscontainer{
+        width: 100%;
+        height: 200vh;
+        background-image: url(./images/skybg.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 0 8%;
+        position: relative;
+    }
+    .text{
+        margin-top: -100%;
+    }
+    .countdown div h3{
+        font-size: 60px;
+        margin-bottom: -14px;
+        margin: 8px;
+    }
+    .formdisp{
+        margin-top: -20%;
+        margin-left: -130%;
+    }
+    .formdisp input{
+        width: 300px; 
+    }
+    /* .dispflex{
+        margin-top: 100%;
+        margin-left: -100%;
+    } */
+}
